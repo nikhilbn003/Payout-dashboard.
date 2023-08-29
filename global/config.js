@@ -3,10 +3,9 @@ const DevConfig = {
   CONFIG: "DEVELOPMENT",
 
   AZURE_CONFIG: {
-    NEXT_PUBLIC_AZURE_CLIENT_ID: "d93c21be-acce-4eeb-9060-e351d84e7fec",
-    NEXT_PUBLIC_AZURE_TENANT_ID:
-      "https://login.microsoftonline.com/696e5350-ad97-4434-9554-59207481a1ed",
-  },
+    NEXT_PUBLIC_AZURE_CLIENT_ID: process.env.NEXT_PUBLIC_AZURE_CLIENT_ID,
+    NEXT_PUBLIC_AZURE_TENANT_ID:process.env.NEXT_PUBLIC_AZURE_TENANT_ID 
+   },
   SERVER_TYPE: {
     INTERNAL: {
       TYPE: "INTERNAL",
@@ -25,9 +24,8 @@ const StageConfig = {
   CONFIG: "STAGING",
 
   AZURE_CONFIG: {
-    NEXT_PUBLIC_AZURE_CLIENT_ID: "d93c21be-acce-4eeb-9060-e351d84e7fec",
-    NEXT_PUBLIC_AZURE_TENANT_ID:
-      "https://login.microsoftonline.com/696e5350-ad97-4434-9554-59207481a1ed",
+    NEXT_PUBLIC_AZURE_CLIENT_ID: process.env.NEXT_PUBLIC_AZURE_CLIENT_ID,
+    NEXT_PUBLIC_AZURE_TENANT_ID:process.env.NEXT_PUBLIC_AZURE_TENANT_ID 
   },
   SERVER_TYPE: {
     INTERNAL: {
@@ -47,9 +45,8 @@ const ProdConfig = {
   CONFIG: "PRODUCTION",
  
   AZURE_CONFIG: {
-    NEXT_PUBLIC_AZURE_CLIENT_ID: "d93c21be-acce-4eeb-9060-e351d84e7fec",
-    NEXT_PUBLIC_AZURE_TENANT_ID:
-      "https://login.microsoftonline.com/696e5350-ad97-4434-9554-59207481a1ed",
+    NEXT_PUBLIC_AZURE_CLIENT_ID: process.env.NEXT_PUBLIC_AZURE_CLIENT_ID,
+    NEXT_PUBLIC_AZURE_TENANT_ID:process.env.NEXT_PUBLIC_AZURE_TENANT_ID 
   },
   SERVER_TYPE: {
     INTERNAL: {
