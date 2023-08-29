@@ -9,13 +9,13 @@ const DevConfig = {
   SERVER_TYPE: {
     INTERNAL: {
       TYPE: "INTERNAL",
-      WEB_LINK: "http://localhost:3000",
-      API_LINK: "http://localhost:3000/api",
+      WEB_LINK: process.env.WEB_LINK_DEV_INTERNAL,
+      API_LINK: process.env.API_LINK_DEV_INTERNAL,
     },
     EXTERNAL: {
       TYPE: "EXTERNAL",
-      WEB_LINK: "https://brea.bhivealts.com",
-      API_LINK: "https://brea.bhivealts.com/api/v1",
+      WEB_LINK: process.env.WEB_LINK_DEV_EXTERNAL,
+      API_LINK: process.env.API_LINK_DEV_EXTERNAL,
     },
   },
 };
@@ -30,13 +30,13 @@ const StageConfig = {
   SERVER_TYPE: {
     INTERNAL: {
       TYPE: "INTERNAL",
-      WEB_LINK: "http://127.0.0.1:3000",
-      API_LINK: "http://127.0.0.1:3000/api",
+      WEB_LINK: process.env.WEB_LINK_STAGE_INTERNAL,
+      API_LINK: process.env.API_LINK_STAGE_INTERNAL,
     },
     EXTERNAL: {
       TYPE: "EXTERNAL",
-      WEB_LINK: "https://app-stage.bhivealts.com",
-      API_LINK: "https://brea.bhivealts.com/api/v1",
+      WEB_LINK: process.env.WEB_LINK_STAGE_EXTERNAL,
+      API_LINK: process.env.API_LINK_STAGE_EXTERNAL,
     },
   },
 };
@@ -51,13 +51,13 @@ const ProdConfig = {
   SERVER_TYPE: {
     INTERNAL: {
       TYPE: "INTERNAL",
-      WEB_LINK: "https://brea-app.bhivealts.com/",
-      API_LINK: "https://brea-app.bhivealts.com/api",
+      WEB_LINK: process.env.WEB_LINK_PROD_INTERNAL,
+      API_LINK: process.env.API_LINK_PROD_INTERNAL,
     },
     EXTERNAL: {
       TYPE: "EXTERNAL",
-      WEB_LINK: "https://brea.bhivealts.com",
-      API_LINK: "https://brea.bhivealts.com/api/v1",
+      WEB_LINK: process.env.WEB_LINK_PROD_EXTERNAL,
+      API_LINK: process.env.API_LINK_PROD_EXTERNAL,
     },
   },
 };
